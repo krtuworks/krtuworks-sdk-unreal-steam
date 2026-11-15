@@ -20,10 +20,24 @@ THIRD_PARTY_INCLUDES_END
 #include <mutex>
 #include <optional>
 #include <string>
+#include <type_traits>
+#include <utility>
 #include <vector>
 
 namespace
 {
+	// Web API tickets came with Steamworks 1.57; UE 5.3's bundled SDK is older. One clear error instead of a page of missing members.
+	template <class TUser, class = void>
+	struct THasWebApiTicket : std::false_type
+	{
+	};
+	template <class TUser>
+	struct THasWebApiTicket<TUser, std::void_t<decltype(std::declval<TUser&>().GetAuthTicketForWebApi(""))>> : std::true_type
+	{
+	};
+	static_assert(THasWebApiTicket<ISteamUser>::value,
+		"KrtuworksSteam needs the Steamworks SDK 1.57 or newer (ISteamUser::GetAuthTicketForWebApi); this engine's Steamworks SDK is older.");
+
 	constexpr std::chrono::milliseconds LeaderboardWait{10000};
 
 	/** The two call results of one own-row read, and what they said. The mutex guards everything below it. */

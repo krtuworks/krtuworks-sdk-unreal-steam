@@ -4,7 +4,7 @@ KrtuworksSteam adds Steam to the Krtuworks Unreal plugin: the Steam account's pl
 
 ## Required steps
 1. Set up the Krtuworks plugin first (its `AGENTS.md`).
-2. Put this plugin, in the same version as the Krtuworks plugin, in the project's `Plugins/KrtuworksSteam` folder and enable it. It needs the engine's Online Subsystem Steam plugin and the Steamworks SDK 1.57 or later; configure Online Subsystem Steam for the game's Steam app as usual.
+2. Put this plugin, in the same version as the Krtuworks plugin, in the project's `Plugins/KrtuworksSteam` folder and enable it. It needs Unreal Engine 5.4 or later, the engine's Online Subsystem Steam plugin and the Steamworks SDK 1.57 or later (UE 5.3 bundles an older one); configure Online Subsystem Steam for the game's Steam app as usual.
 3. Nothing to call: the plugin registers its Steam services with the Krtuworks subsystem when the game starts. In an app that is not a game (`type` in `krtuworks-config.json`), Steam is not used.
 
 ## Rules

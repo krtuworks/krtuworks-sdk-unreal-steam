@@ -4,6 +4,14 @@ All notable changes to the KrtuworksSteam plugin for Unreal Engine. Versions fol
 
 ## Unreleased
 
+## 1.0.2 - 2026-11-15
+
+### Fixed
+- The plugin did not link in modular builds (the editor): the Krtuworks plugin did not export the Steam half it builds on.
+
+### Changed
+- Unreal Engine 5.4 or later: UE 5.3 bundles a Steamworks SDK older than 1.57, and the build there now stops with one message that names the SDK version it needs.
+
 ## 1.0.1 - 2026-11-15
 
 ### Changed

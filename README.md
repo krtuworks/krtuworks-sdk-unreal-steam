@@ -1,6 +1,6 @@
 # KrtuworksSteam for Unreal Engine
 
-KrtuworksSteam adds Steam to the [Krtuworks Unreal plugin](https://github.com/krtuworks/krtuworks-sdk-unreal): the Steam account's player, each session's licence check, achievements both ways, a stats mirror, the player's own Steam leaderboard row, Steam Cloud, rich presence and DLC ownership. Windows, macOS and Linux (Steam Deck included); UE 5.3 or later, Steamworks SDK 1.57 or later.
+KrtuworksSteam adds Steam to the [Krtuworks Unreal plugin](https://github.com/krtuworks/krtuworks-sdk-unreal): the Steam account's player, each session's licence check, achievements both ways, a stats mirror, the player's own Steam leaderboard row, Steam Cloud, rich presence and DLC ownership. Windows, macOS and Linux (Steam Deck included); UE 5.4 or later with the Steamworks SDK 1.57 or later (UE 5.3 bundles an older Steamworks SDK).
 
 Put this repository at the tag of the version you use (or the zip from [Releases](https://github.com/krtuworks/krtuworks-sdk-unreal-steam/releases)) in your project's `Plugins/KrtuworksSteam` folder, next to the Krtuworks plugin of the same version, and enable it. It needs the engine's Online Subsystem Steam plugin. Nothing to call: it registers itself.
 
