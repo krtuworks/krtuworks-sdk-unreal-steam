@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.0.0",
+	"FriendlyName": "Krtuworks SDK: Steam",
+	"Description": "Steam for the Krtuworks SDK: the Steam account's player (a web API ticket for krtuworks-id), each session's licence check, and achievements both ways. Needs the Steamworks SDK 1.57 or newer and the Online Subsystem Steam plugin.",
+	"Category": "Online",
+	"CreatedBy": "Krtuworks LLC",
+	"CreatedByURL": "https://krtuworks.com",
+	"DocsURL": "https://partner.krtuworks.com/docs",
+	"SupportURL": "mailto:support@krtuworks.com",
+	"CanContainContent": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "KrtuworksSteam",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64", "Mac", "Linux" ]
+		}
+	],
+	"Plugins": [
+		{ "Name": "Krtuworks", "Enabled": true },
+		{ "Name": "OnlineSubsystemSteam", "Enabled": true }
+	]
+}
