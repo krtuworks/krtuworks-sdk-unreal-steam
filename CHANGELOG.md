@@ -4,6 +4,11 @@ All notable changes to the KrtuworksSteam plugin for Unreal Engine. Versions fol
 
 ## Unreleased
 
+## 1.0.1 - 2026-11-15
+
+### Changed
+- No change in this package: the SDK packages share one version, and 1.0.1 fixes the Unity package.
+
 ## 1.0.0 - 2026-11-15
 
 First release. Unreal Engine 5.3 or later, Steamworks SDK 1.57 or later, Windows, macOS and Linux.
