@@ -4,6 +4,11 @@ All notable changes to the KrtuworksSteam plugin for Unreal Engine. Versions fol
 
 ## Unreleased
 
+## 1.0.4 - 2026-11-22
+
+### Changed
+- No change in this package: the SDK packages share one version, and this one fixes the Krtuworks plugin.
+
 ## 1.0.3 - 2026-11-22
 
 ### Changed
