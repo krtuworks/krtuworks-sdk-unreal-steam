@@ -4,6 +4,12 @@ All notable changes to the KrtuworksSteam plugin for Unreal Engine. Versions fol
 
 ## Unreleased
 
+## 1.0.8 - 2026-11-26
+
+### Fixed
+- The Steam client's own answer for a DLC (`BIsSubscribedApp`) is now used when the server could not check: the Steam services give the SDK their ownership answer.
+- A Steam ticket that was never sent is cancelled.
+
 ## 1.0.7 - 2026-11-25
 
 ### Changed

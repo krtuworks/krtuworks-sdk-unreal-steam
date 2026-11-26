@@ -295,6 +295,11 @@ namespace
 			return Sync.webApiTicket();
 		}
 
+		void cancelWebApiTicket(const std::string& Ticket) override
+		{
+			Sync.cancelWebApiTicket(Ticket);
+		}
+
 		std::vector<std::string> unlockedAchievements() override
 		{
 			return Sync.unlockedAchievements();
@@ -321,6 +326,11 @@ namespace
 		}
 
 		krtu::PlatformPresence* presence() override
+		{
+			return &Sync;
+		}
+
+		krtu::PlatformOwnership* ownership() override
 		{
 			return &Sync;
 		}
