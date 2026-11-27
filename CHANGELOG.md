@@ -4,6 +4,11 @@ All notable changes to the KrtuworksSteam plugin for Unreal Engine. Versions fol
 
 ## Unreleased
 
+## 1.0.13 - 2026-11-27
+
+### Changed
+- No change in this package: the SDK packages share one version, and this one makes the `sessions` module switch take effect while the game runs.
+
 ## 1.0.12 - 2026-11-26
 
 ### Changed
